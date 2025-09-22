@@ -5,7 +5,7 @@ A **React Native (Expo)** + **NestJS** application developed as part of the **te
 
 DZLink is a mobile-first platform that allows users to **create profiles, connect with others, share offers, and explore opportunities** across Algeria.
 
-[![Watch Demo](https://img.shields.io/badge/▶️%20Watch%20Demo-purple?style=for-the-badge)]([https://drive.google.com/file/d/1uHHoEP8icUEMSF6JWreMVrJizBI-JB9O/view?usp=sharing])
+[![Watch Demo](https://img.shields.io/badge/▶️%20Watch%20Demo-purple?style=for-the-badge)](https://drive.google.com/file/d/1uHHoEP8icUEMSF6JWreMVrJizBI-JB9O/view?usp=sharing)
 
 ---
 
