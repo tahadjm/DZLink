@@ -1,0 +1,40 @@
+import type { User } from "@/types";
+
+export const mockUsers: User[] = [
+  {
+    id: "1",
+    email: "alice@dzlink.com",
+    name: "Alice Martin",
+    bio: "Développeur indépendant spécialisé en React Native, originaire d’Oran, passionné par la création d’applications mobiles performantes.",
+    phone: "+213712345678",
+    website: "https://studionova.com",
+    city: "alger",
+    profileType: "freelance",
+    tags: ["ui", "figma"],
+    avatarUrl: require("@/assets/thumbnails/profile-1.jpg"),
+  },
+  {
+    id: "2",
+    email: "john@dzlink.com",
+    name: "John Doe",
+    bio: "Développeur spécialisé en React Native basé à Sétif, expérimenté avec Expo et TypeScript.",
+    phone: "+213712345678",
+    website: "https://studionova.com",
+    city: "setif",
+    profileType: "entreprise",
+    tags: ["react", "expo", "typescript"],
+    avatarUrl: require("@/assets/thumbnails/profile-2.jpg"),
+  },
+  {
+    id: "3",
+    email: "maria@dzlink.com",
+    name: "Maria",
+    bio: "Designer créative et développeuse passionnée par les interfaces modernes et intuitives.",
+    phone: "+213712345678",
+    website: "https://studionova.com",
+    city: "annaba",
+    profileType: "freelance",
+    tags: ["design", "dev"],
+    avatarUrl: require("@/assets/thumbnails/profile-2.jpg"),
+  },
+];
