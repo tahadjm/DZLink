@@ -1,7 +1,7 @@
 # 📱 DZLink - Mobile Networking App
 
 A **React Native (Expo)** + **NestJS** application developed as part of the **technical test** for the **Mobile Developer** role at  
-<img src="[https://temtemone.com/_next/static/media/Logo-temtemOne.15009a93.svg](https://bignova-company.com/wp-content/uploads/2023/11/bignova-1.png)" alt="Temtem" height="24" style="vertical-align: middle;" />
+<img src="[https://bignova-company.com/wp-content/uploads/2023/11/bignova-1.png]" alt="BigNova" height="24" style="vertical-align: middle;" />
 
 DZLink is a mobile-first platform that allows users to **create profiles, connect with others, share offers, and explore opportunities** across Algeria.
 
