@@ -1,98 +1,232 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# ⚡ DZLink - Backend API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+A **NestJS + MongoDB** backend developed as part of the **technical test** for the **Backend Developer** role at <img src="https://temtemone.com/_next/static/media/Logo-temtemOne.15009a93.svg" alt="Temtem" height="24" style="vertical-align: middle;" />
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+DZLink provides the **API services** for the DZLink platform: authentication, user profiles, offers, sponsorships, cities (Wilayas), and tags.  
 
-## Description
+---
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## ✨ Features
 
-## Project setup
+- 🔐 **Authentication & Authorization** with JWT + Argon2.
+- 👤 **User profiles** with avatar, bio, tags, and location.
+- 🌍 **58 Algerian Wilayas** pre-seeded in the database.
+- 🏷️ **Tags system** for categorizing users and offers.
+- 📢 **Offers & Sponsorships** modules.
+- 📂 **Clean modular architecture** (NestJS best practices).
+- 🛠️ **Docker-ready** for containerized deployment.
 
-```bash
-$ pnpm install
-```
+---
 
-## Compile and run the project
+## 🛠️ Tech Stack
 
-```bash
-# development
-$ pnpm run start
+- [NestJS](https://nestjs.com/) - Framework
+- [MongoDB + Mongoose](https://mongoosejs.com/) - Database & ODM
+- [JWT](https://jwt.io/) - Authentication
+- [Argon2](https://www.npmjs.com/package/argon2) - Password hashing
+- [Class Validator](https://github.com/typestack/class-validator) - Validation
 
-# watch mode
-$ pnpm run start:dev
+---
 
-# production mode
-$ pnpm run start:prod
-```
+## 🚀 Getting Started
 
-## Run tests
+### 1. Clone repo
 
 ```bash
-# unit tests
-$ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
+git clone https://github.com/<your-username>/dzlink-backend
+cd dzlink-backend
 ```
 
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+### 2. Install dependencies
 
 ```bash
-$ pnpm install -g @nestjs/mau
-$ mau deploy
+npm install
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### 3. Setup environment variables
 
-## Resources
+1. Copy the `.env.example` file to create your own `.env` file:
 
-Check out a few resources that may come in handy when working with NestJS:
+   ```bash
+   cp .env.example .env
+   ```
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+2. Open the new `.env` file and fill in your config:
 
-## Support
+   ```env
+   # MongoDB
+    MONGO_HOST=localhost
+    MONGO_PORT=27017
+    MONGO_INITDB_DATABASE=your-db-name
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+    # Server
+    PORT=4000
 
-## Stay in touch
+    # Debugging
+    DEBUG=true
+    
+    # Authentication
+    JWT_SECRET=your-jwt-secret
+    
+    # Admin seeding
+    SEED_ADMIN=true
+    SEED_ADMIN_EMAIL=admin@dzlink.com
+    SEED_ADMIN_PASSWORD=password123
+    
+    # Data seeding
+    SEED_CITIES=true
+    SEED_TAGS=true
+   ```
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+### 4. Seed database
 
-## License
+Preloads **58 Algerian Wilayas** and common tags:
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+```bash
+npm run seed
+```
+
+
+
+---
+
+## 📂 Project structure
+
+```
+  ..
+├── README.md
+├── dist
+│   ├── libs
+│   │   ├── repositories
+│   │   ├── schemas
+│   │   ├── storage
+│   │   └── utils
+│   ├── src
+│   │   ├── admin-auth
+│   │   ├── app.controller.d.ts
+│   │   ├── app.controller.js
+│   │   ├── app.controller.js.map
+│   │   ├── app.module.d.ts
+│   │   ├── app.module.js
+│   │   ├── app.module.js.map
+│   │   ├── app.service.d.ts
+│   │   ├── app.service.js
+│   │   ├── app.service.js.map
+│   │   ├── auth
+│   │   ├── cities
+│   │   ├── config
+│   │   ├── database
+│   │   ├── main.d.ts
+│   │   ├── main.js
+│   │   ├── main.js.map
+│   │   ├── offers
+│   │   ├── seeder.d.ts
+│   │   ├── seeder.js
+│   │   ├── seeder.js.map
+│   │   ├── sponsorship
+│   │   ├── tags
+│   │   ├── upload
+│   │   └── users
+│   └── tsconfig.build.tsbuildinfo
+├── eslint.config.mjs
+├── libs
+│   ├── repositories
+│   │   ├── index.ts
+│   │   ├── src
+│   │   └── tsconfig.lib.json
+│   ├── schemas
+│   │   ├── index.ts
+│   │   ├── src
+│   │   └── tsconfig.lib.json
+│   ├── storage
+│   │   ├── index.ts
+│   │   └── src
+│   └── utils
+│       ├── index.ts
+│       ├── src
+│       └── tsconfig.lib.json
+├── nest-cli.json
+├── package.json
+├── pnpm-lock.yaml
+├── src
+│   ├── admin-auth
+│   │   ├── admin-auth.controller.ts
+│   │   ├── admin-auth.module.ts
+│   │   ├── admin-auth.service.ts
+│   │   ├── dto
+│   │   ├── guards
+│   │   └── strategies
+│   ├── app.controller.spec.ts
+│   ├── app.controller.ts
+│   ├── app.module.ts
+│   ├── app.service.ts
+│   ├── auth
+│   │   ├── auth.controller.ts
+│   │   ├── auth.module.ts
+│   │   ├── auth.service.ts
+│   │   ├── decorators
+│   │   ├── dto
+│   │   ├── guards
+│   │   ├── interfaces
+│   │   └── strategies
+│   ├── cities
+│   │   ├── cities.controller.ts
+│   │   ├── cities.module.ts
+│   │   ├── cities.service.ts
+│   │   └── dto
+│   ├── config
+│   │   ├── index.ts
+│   │   ├── jwt-env.config.ts
+│   │   ├── mongo-env.config.ts
+│   │   ├── seeder-config.ts
+│   │   └── validate-env.ts
+│   ├── database
+│   │   └── database.module.ts
+│   ├── main.ts
+│   ├── offers
+│   │   ├── dto
+│   │   ├── offers.controller.ts
+│   │   ├── offers.module.ts
+│   │   └── offers.service.ts
+│   ├── seeder.ts
+│   ├── sponsorship
+│   │   ├── dto
+│   │   ├── sponsorship.controller.ts
+│   │   ├── sponsorship.module.ts
+│   │   └── sponsorship.service.ts
+│   ├── tags
+│   │   ├── dto
+│   │   ├── tags.controller.ts
+│   │   ├── tags.module.ts
+│   │   └── tags.service.ts
+│   ├── upload
+│   │   ├── dto
+│   │   ├── upload.controller.ts
+│   │   ├── upload.module.ts
+│   │   ├── upload.service.ts
+│   │   └── validations
+│   └── users
+│       ├── dto
+│       ├── users.controller.ts
+│       ├── users.module.ts
+│       └── users.service.ts
+├── test
+│   ├── app.e2e-spec.ts
+│   └── jest-e2e.json
+├── tsconfig.build.json
+├── tsconfig.json
+└── uploads
+
+```
+
+
+## 👤 Author
+
+- **Taha Djemili**  
+  [GitHub](https://github.com/<your-username>) | [Email](mailto:taha.djm087@gmail.com)
+
+---
+
+## 📄 License
+
+This project is for assessment purposes only.
